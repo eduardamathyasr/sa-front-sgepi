@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Organiza os elementos lado a lado */
+    gap: 300px; /* Espaçamento entre os dois blocos */
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px; /* Espaçamento superior */
+}
+
+.form-container, .historico-container {
+    flex: 1; /* Faz os dois blocos ocuparem o mesmo espaço */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-bottom: 35px;
+    margin-top: 0; /* Remove o espaço superior do h2 */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 100%; /* Ajusta para ocupar a largura total disponível */
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    background-color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.historico-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.historico-item span {
+    font-size: 14px;
+    color: #333;
+}
+
+.no-movimentacao {
+    color: #888;
+    font-style: italic;
+}
