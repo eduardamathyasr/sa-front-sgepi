@@ -9,6 +9,9 @@ const RegistrarRetDev = () => {
     const [user, setUser] = useState({ funcionario: '', dataMovimentacao: "", tipoMovimento: "" })
     const [historico, setHistorico] = useState([])
 
+    const navigate = useNavigate();
+
+
     // Carregar o ID do EPI e o histórico no carregamento do componente
 
     const listaMovimentacao = async () => {
@@ -43,6 +46,10 @@ const RegistrarRetDev = () => {
 
         // Atualiza o estado do histórico para limpar a exibição na página
         setHistorico([]);
+    };
+
+    const irParaInfo = () => {
+        navigate('/info'); // Substitua pelo caminho correto
     };
 
     useEffect(() => { listaMovimentacao() }, []);
@@ -98,8 +105,12 @@ const RegistrarRetDev = () => {
                             </select>
                         </div>
                         <button type="submit">Registrar</button>
+                        <div>
+                            <button className="botaoVoltaDois" onClick={irParaInfo}>Voltar</button>
+                        </div>
                     </form>
                 </div>
+
                 <div className="historico-container">
                     <h2>Histórico de Movimentações</h2>
                     <div>

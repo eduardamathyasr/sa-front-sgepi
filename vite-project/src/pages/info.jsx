@@ -154,8 +154,8 @@ const Info = () => {
         </div>
       </div>
       <div>
-          <button className="botaoVoltaDois" onClick={irParaCadastroFuncionario}>Voltar</button>
-        </div>
+        <button className="botaoVoltaDois" onClick={irParaCadastroFuncionario}>Voltar</button>
+      </div>
     </div>
   );
 };
